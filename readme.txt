@@ -81,6 +81,7 @@ Yes.
 Added Label.
 Added Badges.
 Added Back to top.
+Added Line Break.
 
 = 0.1 =
 Added Buttons .

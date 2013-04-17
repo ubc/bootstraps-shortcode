@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Bootstraps shortcode
+Plugin Name: Bootstrap shortcodes
 Plugin URI:  http://educ.ubc.ca
 Description: A plugin that allows users to use shortcodes that utilizes some of the built in styles from twitter bootstrap.
 Version: 0.1
@@ -91,7 +91,7 @@ add_shortcode( 'icon', 'icon_shortcode' );
 function back_shortcode( $atts ) {
    return '<div class="row-fluid ubc7-back-to-top clearfix"><div class="span4"><a href="#" title="Back to top">Back to top <span class="ubc7-arrow up-arrow grey"></span></a></div></div>';
 }
-add_shortcode( 'back to top', 'back_shortcode' );
+add_shortcode( 'back_to_top', 'back_shortcode' );
 
 //Line Break Shortcode
 function break_shortcode( $atts ) {

@@ -117,13 +117,13 @@ I am a container with the thumbnail attached[/alert]
 [break]
 [well]I am a container with the thumbnail attached
 
-[back to top][/well]
+[back_to_top][/well]
 
 [well name="large"]I am a container with the thumbnail attached[/well]
 <h2>Back to Top</h2>
 [break]
 
-[back to top]
+[back_to_top]
 <h2>Break</h2>
 [break]
 

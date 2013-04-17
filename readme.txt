@@ -63,7 +63,7 @@ See all Icon names at:
 http://fortawesome.github.io/Font-Awesome/
 
 **Back to Top**
-[back to top]
+[back_to_top]
 
 == Screenshots ==
 N/A

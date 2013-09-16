@@ -1,5 +1,6 @@
-=== Plugin Name ===
+=== Bootstraps-shortcode ===
 Contributors: brabbins
+Version: 2
 Donate Link: N/A
 Tags: bootstrap, shortcodes,
 Requires at least: 3.0.1
@@ -22,6 +23,10 @@ A plugin that implements shortcode that utilizes some of bootstraps styles.
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
 **Uses**
+
+
+**Colours**
+[colors]Content[/colours]
 
 **Alerts**
 [alert]Content[/alert]
@@ -89,6 +94,15 @@ Added Classes.
 Added Alerts.
 Added Icons.
 Added Thumbnails.
+
+= 1 =
+Launched
+
+= 2 =
+Added new features. Fixed bug.
+Added [colours].
+Added [lead].
+Added titles to [button].
 
 == Upgrade Notice ==
 N/A

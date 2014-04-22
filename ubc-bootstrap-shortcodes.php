@@ -7,17 +7,6 @@ Version: 2.01
 Author: David Brabbins
 License: GPL2
 */
-function ubc_bootstrap_shortcodes_column_update_plugin(){
-   
-   include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-   if( is_plugin_active(  'bootstrap-shortcodes/bootstraps-shortcode.php' ) ) {
-      deactivate_plugins( 'bootstrap-shortcodes/bootstraps-shortcode.php' );
-      activate_plugin(    'bootstrap-shortcodes/ubc-bootstrap-shortcodes.php' );
-   }
-
-}
-ubc_bootstrap_shortcodes_column_update_plugin();
-
 
 //thumbnails short with class works should work with column shortcode
 function thumbnails_shortcode( $atts, $content = null ) {

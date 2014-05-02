@@ -3,7 +3,7 @@
 Plugin Name: UBC Bootstrap shortcodes
 Plugin URI:  http://educ.ubc.ca
 Description: A plugin that allows users to use shortcodes that utilizes some of the built in styles from twitter bootstrap.
-Version: 2.01
+Version: 2.02
 Author: David Brabbins
 License: GPL2
 */
@@ -22,6 +22,15 @@ function container_shortcode( $atts, $content = null ) {
    return '<div class="' . esc_attr($style) . '">' . do_shortcode($content) . '</div>';
 }
 add_shortcode( 'container', 'container_shortcode' );
+
+//Span class for input color options filler for custom boxes
+function colour_shortcode( $atts, $content = null ) {
+	extract( shortcode_atts( array(
+      'option' => 'pomegranate',
+      ), $atts ) );
+   return '<span class="' . esc_attr($option) . '">' . do_shortcode($content) . '</span>';
+}
+add_shortcode( 'colour', 'colour_shortcode' );
 
 //labels shortcode
 function label_shortcode( $atts, $content = null ) {
@@ -63,9 +72,10 @@ add_shortcode( 'badge', 'badge_shortcode' );
 function button_shortcode( $atts, $content = null ) {
 	extract( shortcode_atts( array(
       'name' => 'primary',
-	  'link' => 'href'
+	  'link' => '#',
+	  'title' => do_shortcode($content)
       ), $atts ) );
-   return '<a href="' . esc_attr($link) . '" class="btn btn-' . esc_attr($name) . '">' . do_shortcode($content) . '</a>';
+   return '<a href="' . esc_attr($link) . '" title="' . esc_attr($title) . '" class="btn btn-' . esc_attr($name) . '">' . do_shortcode($content) . '</a>';
 }
 add_shortcode( 'button', 'button_shortcode' );
 
@@ -77,6 +87,12 @@ function spanbutton_shortcode( $atts, $content = null ) {
    return '<span class="btn btn-' . esc_attr($class) . '">' . do_shortcode($content) . '</span>';
 }
 add_shortcode( 'buttoncon', 'spanbutton_shortcode' );
+
+//Lead Shortcode
+function lead_shortcode( $atts, $content = null ) {
+   return '<span class="lead">' . do_shortcode($content) . '</span>';
+}
+add_shortcode( 'lead', 'lead_shortcode' );
 
 //icon button shortcode, use the icon name without the icon-. Defaults to the globe.
 function icon_shortcode( $atts ) {
